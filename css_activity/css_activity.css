@@ -104,11 +104,8 @@ input::placeholder {
   vertical-align: middle;
 }
 
-#marquee{
-    max-width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-  
- 
-
+#marquee {
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 20px;
 }
