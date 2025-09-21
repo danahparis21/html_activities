@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
+    <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" crossorigin="anonymous">
+    
+    <style>
+      .bg-yellow {
+        background-color: beige;
+      }
+      .image-size {
+        width: 7rem;
+      }
+
+      .post{
+        display: inline;
+
+      }
+    </style>
+  </head>
+  <body style="background-color: #f9f9f9">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bg-yellow border p-3 my-2">
+            <img
+              src="profile.png"
+              class="my-2 mx-auto d-block img-fluid rounded-circle img-thumbnail image-size"
+              alt="img"
+            />
+
+            <h5 class="text-center fw-semibold fs-5">Jason C. Magsino</h5>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h1 class="card-title text-center fs-6 fw-bold"><i class="fa-solid fas fa-address-card"></i> Bio</h1>
+                <p class="text-center fw-semibold fs-6">
+                  "I can do all things, through Christ Who strengthens me"
+                </p>
+                <p class="text-center fw-plain">Philippians 4:13</p>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                    
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    
+                  >
+                  <i class="fa-solid fas fa-user me-2"></i>
+                  About Me
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="text-center">
+                      <strong>Hello!</strong> My name is Sir Jason Magsino,
+                      welcome to my page!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  <i class="fa-solid fas fas fa-camera me-2"></i>
+                    My Hobbies
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="text-center"> <i class="fa-solid fas fa-book-open me-2"></i>Reading</p>
+                    <p class="text-center"><i class="fa-solid fas fa-desktop me-2"></i>Coding</p>
+                    <p class="text-center"><i class="fa-solid fas fa-music me-2"></i>Listening to Music</p>
+                    <p class="text-center"><i class="fa-solid fas fa-basketball-ball me-2"></i>Playing basketball</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-3">
+              <div class="card-body">
+                <h1 class="card-title text-center fs-6 fw-bold">
+                    <i class="fa-solid 	fas fa-user-friends me-2"></i>Friend Lists
+                </h1>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><i class="fa-solid 	fas fa-user-alt me-2"></i> Calvin John Placio</li>
+                  <li class="list-group-item"><i class="fa-solid 	fas fa-user-alt  me-2"></i> Oliver Hernandez</li>
+                  <li class="list-group-item"><i class="fa-solid 	fas fa-user-alt  me-2"></i> Yno Magdrigal</li>
+                  <li class="list-group-item"><i class="fa-solid 	fas fa-user-alt  me-2"></i> Melvin Roxas</li>
+                </ul>
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card text-center mb-3 my-3">
+                <div class="border m-3">
+
+                
+                <div class="card-header text-center fw-bold fs-3">
+                 My First Bootstrap Code
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                  <div class="mb-3">
+            
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What is on your mind?"></textarea>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                 
+                    <button class="btn btn-primary me-md-2" type="button"><i class="fa-solid fas fa-play"></i> Post Now</button>
+                </div>
+        </div>
+                </div>
+                
+            
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                    <div class="post">
+                        <p class="card-title text-start fs-6 fw-bold"> Jason C. Magsino  <p class="fw-semibold"> • 1h ago</p></p>
+
+                    </div>
+                 
+                  <p class="text-start fw-plain fs-6">
+                    Just finished Bootstrap 5 laboratory activity today!</p>
+
+                    <div class="card-group p-3">
+                        <div class="card mx-1">
+                            <img src="profile.png"  class="card-img-top card-image img-thumbnail" alt="...">
+                          </div>
+                        <div class="card mx-1">
+                          <img src="profile.png" class="card-img-top card-image img-thumbnail" alt="...">
+                        </div>
+                        <div class="card mx-1">
+                            <img src="profile.png"  class="card-img-top card-image img-thumbnail" alt="...">
+                          </div>
+                          <div class="card mx-1">
+                            <img src="profile.png"  class="card-img-top card-image img-thumbnail " alt="...">
+                          </div>
+                      </div>
+                  
+                </div>
+                <div class="mx-3 my-2">
+                    <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa-solid 	fas fa-thumbs-up"></i> Like</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fas fa-comment"></i> Comment</button>
+                <button type="button" class="btn btn-outline-success btn-sm"><i class="fa-solid	fas fa-share"></i> Share</button>
+
+                </div>
+                
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                    <div>
+                        <p class="card-title text-start fs-6 fw-bold"> Melvin Roxas  <p class="fw-semibold"> • 1h ago</p></p>
+
+                    </div>
+                 
+                  <p class="text-start fw-plain fs-6">
+                    Had a great time learning Web Development today! </p>
+                  
+                </div>
+                <div class="mx-3 my-2">
+                    <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa-solid 	fas fa-thumbs-up"></i> Like</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fas fa-comment"></i> Comment</button>
+                <button type="button" class="btn btn-outline-success btn-sm"><i class="fa-solid	fas fa-share"></i> Share</button>
+
+                </div>
+                
+              </div>
+              
+        </div>
+
+        <div class="col-md-3">
+          <div class="card my-3">
+            <div class="card-body">
+              <h1 class="card-title text-start fs-6 fw-bold"><i class="fa-solid fa fa-link me-2"></i>Shortcuts</h1>
+
+              <ul class="list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="card-link"><i class="fa-solid fa fa-link me-2"></i>Card link</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link"><i class="fa-solid fas fa-child me-2"></i>Groups</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link"><i class="fa-solid fas fa-cog me-2"></i>Settings</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="card-link"><i class="fa-solid 	fas fa-question-circle me-2"></i>Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+            <h1 class="card-title text-center fs-6 fw-bold">📢Upcoming Event</h1>
+            <p class="text-center fw-plain fs-6"><i class="fa-solid fas fas fa-file-alt me-2"></i>Intramurals 2025</p>
+            <p class="text-center fw-plain fs-6">September 29 - October 3, 2025</p>
+            <p class="text-center fw-plain fs-6"><i class="fa-solid fas fa-file-alt me-2"></i>Midterm Examination </p>
+            <p class="text-center fw-plain fs-6">October 13 - October 18, 2025</p>
+        </div>
+         </div>
+
+         <div class="card mb-3">
+            <div class="card-body">
+            <h1 class="card-title text-start fs-6 fw-bold">Criteria for Checking </h1>
+            <ul class="list-group list-group-flush mb-3 ms-4">
+                <li class="list">Bootstrap Layout & Responsiveness -50%</li>
+                <li class="list">Font Awesom Icons Usage - 25%</li>
+                <li class="list">Design and Presentation - 25%</li>
+              </ul>
+
+              <h5 class="card-title text-start fs-6 fw-bold">Mga gagamitin</h1>
+            <ul class="list-group list-group-flush ms-4">
+                <li class="list">Bootstrap 5(local copy)</li>
+                <li class="list">FontAwesome (for Icons)</li>
+                <li class="list">HTML & CSS (basic structure)</li>
+                <li class="list">Any images (profile/logo/post/sample)</li>
+              </ul>
+        </div>
+         </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+  <script src="bootstrap5/js/bootstrap.min.js"></script>
+</html>
